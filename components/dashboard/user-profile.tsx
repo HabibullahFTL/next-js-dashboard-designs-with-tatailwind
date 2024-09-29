@@ -15,10 +15,13 @@ import Link from 'next/link';
 export function UserProfile() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className="w-[2.25rem] h-[2.25rem]">
+      <DropdownMenuTrigger
+        asChild
+        className="w-[2.25rem] h-[2.25rem] cursor-pointer"
+      >
         <Avatar>
           <AvatarImage
-            src={'https://github.com/shadcn.png'}
+            src={'https://avatars.githubusercontent.com/u/71924808?v=4'}
             alt="User Profile"
           />
           <AvatarFallback></AvatarFallback>

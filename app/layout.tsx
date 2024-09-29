@@ -1,4 +1,3 @@
-import DashboardLayout from '@/components/dashboard';
 import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
@@ -36,7 +35,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <DashboardLayout>{children}</DashboardLayout>
+          {children}
         </ThemeProvider>
       </body>
     </html>

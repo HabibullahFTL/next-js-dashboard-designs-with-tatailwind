@@ -2,11 +2,11 @@ import { ReactNode } from 'react';
 import DashboardSideBar from './dashboard-side-bar';
 import DashboardTopNav from './dashboard-top-nav';
 
-export default async function DashboardLayout({
-  children,
-}: {
+interface IProps {
   children: ReactNode;
-}) {
+}
+
+const DashboardLayout = ({ children }: IProps) => {
   return (
     <div className="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
       <DashboardSideBar />
@@ -15,4 +15,5 @@ export default async function DashboardLayout({
       </DashboardTopNav>
     </div>
   );
-}
+};
+export default DashboardLayout;
